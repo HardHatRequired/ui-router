@@ -69,19 +69,22 @@
 				<div class="container">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a class="dropdown-toggle js-activated" href="index.html">Home</a>
+							<a class="dropdown-toggle js-activated" ui-sref="home">Home</a>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle js-activated" href="index.html#">Portfolio</a>
+							<a class="dropdown-toggle js-activated" ui-sref="portfolio">Portfolio</a>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle js-activated" href="index.html#">About</a>
+							<a class="dropdown-toggle js-activated" ui-sref="about">About</a>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle js-activated" href="index.html#">Blog</a>
+							<a class="dropdown-toggle js-activated" ui-sref="blog">Blog</a>
 						</li>
 						<li class="dropdown">
 							<a class="dropdown-toggle js-activated" href="index.html#">Contact</a>
+						</li>
+            <li class="dropdown">
+							<a class="dropdown-toggle js-activated" ui-sref="home.list">List</a>
 						</li>
 						<li class="dropdown pull-right searchbox">
 							<a class="dropdown-toggle js-activated" href="index.html#"><i class="icon-search"></i></a>
@@ -100,7 +103,7 @@
 
 <main role="main">
 	<!-- this is where our views will be injected -->
-
+  <ui-view></ui-view>
 </main>
 
 
@@ -108,13 +111,17 @@
 <!--ANGULAR UI-ROUTER HERE-->
 <!--APP.js-->
 <!--mainCtrl -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 
 <script src="assets/js/vendor/jquery.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/vendor/bootstrap-hover-dropdown.min.js">
-</script>
+<script src="assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
 <script src="assets/js/vendor/scripts.js"></script>
 
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/mainCtrl.js"></script>
+<script src="./assets/js/routes.js"></script>
 
 </body>
 </html>
